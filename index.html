@@ -64,8 +64,8 @@
 
     <a-assets>
 
-      <video id="peppa-pig-video" 
-        src="./assets/videos/peppa-pig.mp4"
+      <video id="video1" 
+        src="./assets/videos/Rocket_Launching_Animation.mp4"
         preload="auto"  
         loop="true" 
         playsinline
@@ -80,12 +80,12 @@
   
     <!-- a-nft is the anchor that defines an Image Tracking entity -->
     <!-- on 'url' use the path to the Image Descriptors created before. -->
-    <!-- the path should end with the name without the extension 
-      e.g. if file is pepaa.fset' the path should end with pepaa -->
+    <!-- The file path should end with the name WITHOUT the extension & ONLY ONCE
+      e.g. if file is rocket_img.fset' the path should end with rocket_img -->
   
-    <a-nft id="one" 
+    <a-nft id="nft1" 
       type="nft" 
-      url="./assets/peppa-desc/peppa" 
+      url="./assets/image-marker-desc-files/rocket_img" 
       smooth="true" 
       smoothCount="10" 
       smoothTolerance=".01"
@@ -93,8 +93,8 @@
   
       <!-- As a child of the a-nft entity, define the content to show. -->
   
-      <a-video id="pepaa-vids" 
-        src="#peppa-pig-video" 
+      <a-video id="vid1" 
+        src="#video1" 
         width="600" 
         height="509" 
         position="0 0 -30" 
